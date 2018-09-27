@@ -1,0 +1,8 @@
+type Query {
+  getProfile(pid: ID!): Profile
+}
+
+type Profile {
+ pid:ID!
+ name:String!
+}
