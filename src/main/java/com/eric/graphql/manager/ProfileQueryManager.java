@@ -20,6 +20,9 @@ public class ProfileQueryManager implements GraphQLQueryResolver {
 	}
 	
 	public Profile getProfile(Long pid) {
+		if (!profileMap.containsKey(pid)) {
+			throw new RuntimeException(String.format("Pid [%s] not found.", pid));
+		}
 		return profileMap.get(pid);
 	}
 }

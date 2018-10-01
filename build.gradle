@@ -24,8 +24,7 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
 	compile 'com.fasterxml.jackson.core:jackson-databind'
 	compile 'org.apache.commons:commons-collections4:4.0'
-	compile 'com.graphql-java:graphql-spring-boot-starter:5.0.2'
 	compile 'com.graphql-java:graphql-java-tools:5.2.4'
-	
+	compile 'com.graphql-java:graphql-java-servlet:6.1.2'
 	
 }
